@@ -1,0 +1,31 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'	
+
+[custom.username]
+command = "print -n 'Welcome ' && whoami"
+description = 'The username of the logged in user, displayed because current directory is home'
+symbol = '👋 '
+when = 'test "$HOME" = "$PWD"'
+
+[gcloud]
+disabled = true
+
+[git_metrics]
+disabled = false
+
+[deno]
+disabled = true
+
+[nodejs]
+symbol = '⬡ '
+
+[package]
+disabled = true
+
+[ruby]
+detect_variables = []

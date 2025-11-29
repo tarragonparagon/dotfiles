@@ -1,0 +1,16 @@
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add RVM to PATH for scripting; make sure this is the last PATH variable change
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# The next line updates PATH for the Google Cloud SDK
+if [ -f '/Users/tarragonparagon/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tarragonparagon/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud
+if [ -f '/Users/tarragonparagon/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tarragonparagon/.google-cloud-sdk/completion.zsh.inc'; fi
+
+# Start Starship
+eval "$(starship init zsh)"
